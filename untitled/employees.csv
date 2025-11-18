@@ -1,0 +1,4 @@
+firstName,lastName,email,company,position,salary
+John,Doe,john.doe@mail.com,Google,PROGRAMMER,9000
+Anna,Nowak,anna.nowak@mail.com,Amazon,HR,6000
+Kamil,Kowalski,k.k@mail.com,Intel,MANAGER,15000
