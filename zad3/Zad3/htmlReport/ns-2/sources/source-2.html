@@ -1,0 +1,196 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > Employee</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">Models</a>
+</div>
+
+<h1>Coverage Summary for Class: Employee (Models)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Employee</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (7/14)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (6/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    68.2%
+  </span>
+  <span class="absValue">
+    (15/22)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package Models;
+&nbsp;
+&nbsp;import java.util.Objects;
+&nbsp;
+&nbsp;public class Employee {
+&nbsp;    private String name;
+&nbsp;    private String email;
+&nbsp;    private String companyName;
+&nbsp;    private Department department;
+&nbsp;    private int salary;
+&nbsp;
+&nbsp;
+<b class="fc">&nbsp;    public Employee(String name, String email, String companyName, Department department) {</b>
+<b class="fc">&nbsp;        this.name = name;</b>
+<b class="fc">&nbsp;        this.email = email;</b>
+<b class="fc">&nbsp;        this.companyName = companyName;</b>
+<b class="fc">&nbsp;        this.department = department;</b>
+<b class="fc">&nbsp;        salary = department.getPrice();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public int getSalary() {
+<b class="fc">&nbsp;        return salary;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setSalary(int newSalary) {
+<b class="nc">&nbsp;        this.salary = newSalary;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public String getName() {
+<b class="fc">&nbsp;        return name;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setName(String name) {
+<b class="nc">&nbsp;        this.name = name;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public String getEmail() {
+<b class="fc">&nbsp;        return email;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setEmail(String email) {
+<b class="nc">&nbsp;        this.email = email;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public String getCompanyName() {
+<b class="fc">&nbsp;        return companyName;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setCompanyName(String companyName) {
+<b class="nc">&nbsp;        companyName = companyName;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public Department getDepartment() {
+<b class="fc">&nbsp;        return department;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void setDepartment(Department department) {
+<b class="nc">&nbsp;        this.department = department;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public boolean equals(Object o) {
+<b class="fc">&nbsp;        if (this == o) return true;</b>
+<b class="fc">&nbsp;        if (o == null || getClass() != o.getClass()) return false;</b>
+<b class="fc">&nbsp;        Employee Diffemployee = (Employee) o;</b>
+<b class="fc">&nbsp;        return email.equals(Diffemployee.email);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public int hashCode() {
+<b class="nc">&nbsp;        return Objects.hash(email);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public String toString() {
+<b class="nc">&nbsp;        return (&quot;Name:&quot; + name + &quot; &quot; + &quot;email:&quot; + email + &quot; &quot; + &quot;CompanyName:&quot; + companyName + &quot; &quot; + &quot;department:&quot; + department + &quot; &quot; + &quot;Salary:&quot; + salary);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2025-11-18 15:11</div>
+</div>
+</body>
+</html>
